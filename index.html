@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Lea!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="board" id="board">
+
+  <!-- ===== TITLE ===== -->
+  <h1 class="title">
+    <span class="title-line1">Happy Birthday</span>
+    <span class="title-line2">Lea<span class="title-bang">!</span></span>
+  </h1>
+
+  <div class="board-main">
+
+    <!-- ===== FRAME GRID ===== -->
+    <div class="frame-grid">
+
+      <div class="frame area-f1" style="--rot:-5deg">
+        <div class="frame__inner" data-label="+ photo-1.jpg">
+          <img src="images/photo-1.jpg" alt="Memory photo 1" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+        <span class="tape tape--top" style="--tape-rot:-32deg"></span>
+      </div>
+
+      <div class="frame area-f2" style="--rot:3deg">
+        <div class="frame__inner" data-label="+ photo-2.jpg">
+          <img src="images/photo-2.jpg" alt="Memory photo 2" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+      </div>
+
+      <div class="frame area-hero" style="--rot:-2deg">
+        <div class="frame__inner" data-label="+ photo-3.jpg">
+          <img src="images/photo-3.jpg" alt="Memory photo 3" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+        <span class="tape tape--top" style="--tape-rot:-40deg"></span>
+        <span class="tape tape--right" style="--tape-rot:35deg"></span>
+      </div>
+
+      <div class="frame area-f1b" style="--rot:4deg">
+        <div class="frame__inner" data-label="+ photo-4.jpg">
+          <img src="images/photo-4.jpg" alt="Memory photo 4" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+        <span class="tape tape--top" style="--tape-rot:-20deg"></span>
+      </div>
+
+      <div class="frame area-f2b" style="--rot:-3deg">
+        <div class="frame__inner" data-label="+ photo-5.jpg">
+          <img src="images/photo-5.jpg" alt="Memory photo 5" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+      </div>
+
+      <!-- <div class="frame area-f3" style="--rot:5deg">
+        <div class="frame__inner" data-label="+ photo-6.jpg">
+          <img src="images/photo-6.jpg" alt="Memory photo 6" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+      </div> -->
+
+      <div class="frame area-f4" style="--rot:-4deg">
+        <div class="frame__inner" data-label="+ photo-7.jpg">
+          <img src="images/photo-7.jpg" alt="Memory photo 7" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+        <span class="tape tape--top" style="--tape-rot:15deg"></span>
+      </div>
+
+      <div class="frame area-f5" style="--rot:2deg">
+        <div class="frame__inner" data-label="+ photo-8.jpg">
+          <img src="images/photo-8.jpg" alt="Memory photo 8" onerror="this.closest('.frame').classList.add('is-empty')">
+        </div>
+      </div>
+
+    </div><!-- /frame-grid -->
+
+    <!-- ===== PHOTOBOOTH STRIP ===== -->
+    <div class="photobooth" style="--rot:2deg">
+      <span class="tape tape--top" style="--tape-rot:-10deg"></span>
+      <div class="photobooth__header">PHOTO&nbsp;BOOTH</div>
+      <div class="photobooth__strip">
+        <div class="booth-slot"><img src="images/booth-1.jpg" alt="Photo booth shot 1" onerror="this.closest('.booth-slot').classList.add('is-empty')"></div>
+        <div class="booth-perf"></div>
+        <div class="booth-slot"><img src="images/booth-2.jpg" alt="Photo booth shot 2" onerror="this.closest('.booth-slot').classList.add('is-empty')"></div>
+        <div class="booth-perf"></div>
+        <div class="booth-slot"><img src="images/booth-3.jpg" alt="Photo booth shot 3" onerror="this.closest('.booth-slot').classList.add('is-empty')"></div>
+        <div class="booth-perf"></div>
+        <div class="booth-slot"><img src="images/booth-4.jpg" alt="Photo booth shot 4" onerror="this.closest('.booth-slot').classList.add('is-empty')"></div>
+        <div class="booth-perf"></div>
+        <div class="booth-slot"><img src="images/booth-5.jpg" alt="Photo booth shot 5" onerror="this.closest('.booth-slot').classList.add('is-empty')"></div>
+        <div class="booth-perf"></div>
+        <div class="booth-slot"><img src="images/booth-6.jpg" alt="Photo booth shot 6" onerror="this.closest('.booth-slot').classList.add('is-empty')"></div>
+      </div>
+    </div>
+
+  </div><!-- /board-main -->
+
+  <!-- ===== DOGS (untouched drawings, pinned on like note cards) ===== -->
+  <div class="dog-card dog-card--1" style="--rot:-5deg">
+    <span class="pin pin--red"></span>
+    <img class="dog" src="dog1.png" alt="Hand-drawn shaggy dog">
+  </div>
+  <div class="dog-card dog-card--2" style="--rot:4deg">
+    <span class="pin pin--blue"></span>
+    <img class="dog" src="dog2.png" alt="Hand-drawn sitting dog">
+  </div>
+
+  <!-- ===== STICKY NOTES ===== -->
+  <div class="notes-layer" aria-hidden="false">
+
+    <div class="note note--yellow" style="--rot:-6deg; top:14%; left:2%;">
+      <span class="pin pin--red"></span>
+      “You are the light of the world. A town built on a hill cannot be hidden.” - Matthew 5:16 NIV
+    </div>
+
+    <div class="note note--pink" style="--rot:5deg; top:41%; left:1.5%;">
+      <span class="pin pin--blue"></span>
+      09/12 - 09/22 EGIPTE!!!!!
+    </div>
+
+    <!--<div class="note note--blue" style="--rot:-4deg; top:63%; left:33%;">
+      <span class="pin pin--yellow"></span>
+      Debug the 2am code later, not now 💻
+    </div> -->
+
+    <div class="note note--green" style="--rot:6deg; top:1%; left:70%;">
+      <span class="pin pin--red"></span>
+      09/20 - Lea kom Paarl toe
+    </div>
+
+    <!--<div class="note note--yellow" style="--rot:-3deg; top:78%; left:58%;">
+      <span class="pin pin--blue"></span>
+      BIBLE QUOTE
+    </div> -->
+
+  </div>
+
+</div><!-- /board -->
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
