@@ -179,7 +179,7 @@ body{
   overflow:hidden;
 }
 .area-hero .frame__inner{ aspect-ratio: 5 / 6; }
-.area-f5   .frame__inner{ aspect-ratio: 10 / 6; }
+.area-f5   .frame__inner{ aspect-ratio: 12 / 8; }
 
 .frame__inner img{
   width:100%;
